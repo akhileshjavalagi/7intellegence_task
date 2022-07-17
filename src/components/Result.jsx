@@ -14,7 +14,8 @@ var {       score,
             time, setTime,
             timerOn, setTimeOn, } = useContext(GameStateContext);
 
-
+  //Here I made reset of all time and score when user want to take test
+  //again. It resets all the scores and time.
   const reset = () =>{
             seconds = 0
             setTime(0)
