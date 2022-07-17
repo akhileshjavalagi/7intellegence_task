@@ -13,7 +13,7 @@ var { score, setScore, seconds, minutes, hours } = useContext(GameStateContext);
   return (
     <>
      <Box w="90%" margin="auto" h="500px">
-        <Box border="1px solid red" bgColor="lemonchiffon" w="100%" margin="auto" h="100px">
+        <Box bgColor="lemonchiffon" w="100%" margin="auto" h="100px">
         <Text textAlign="center">
         IQ Test for kids from 7 to 16 year old
         </Text>
@@ -89,9 +89,8 @@ var { score, setScore, seconds, minutes, hours } = useContext(GameStateContext);
             </Box>
             <Box>
             <Box w="50%" margin="auto">
-              <Image  alignItems="end"  w="35%"  src="https://image.shutterstock.com/image-vector/four-stars-icon-vector-illustration-260nw-1345214999.jpg"></Image>
-              <br />
-             <Text textAlign="left">4 out of 5</Text>
+              <Image  alignItems="end"  w="45%"  src="https://image.shutterstock.com/image-vector/four-stars-icon-vector-illustration-260nw-1345214999.jpg"></Image>
+              
              </Box>
             </Box>
         </Box>

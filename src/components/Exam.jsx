@@ -91,7 +91,7 @@
                <Box h="800px" bgColor="#6b6fbc" maxW="10xl"  mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
             
               {/* Here is the count of the question. It shows the question number */}
-              <Heading size="md"  >{currentquestion} / 6 </Heading>
+              <Heading size="md" color="white" >{currentquestion} / 6 </Heading>
               <Box mt="20px" h="130px">
                   {/* Here I am displaying the questionImage by the help of currentquestion 
                   using index. */}
@@ -147,7 +147,7 @@
                <Box w="50%" margin="auto" justifyContent="space-between" gap="10px" display="flex" mt="20px">
                
                
-               <Button  _hover={{ bg: "grey" }} w="20%"  onClick={back}><Image w="35%"   src="https://cdn-icons-png.flaticon.com/512/93/93634.png"></Image></Button>
+               <Button  _hover={{ bg: "grey" }} w="20%"  onClick={back}>Back</Button>
               
                 <Button w="20%" _hover={{ bg: "grey" }} onClick={next} >Next</Button>
               
