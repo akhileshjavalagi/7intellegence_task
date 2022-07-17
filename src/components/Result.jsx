@@ -6,8 +6,22 @@ import { Link } from 'react-router-dom';
 export default function Result() {
   
 // Here I imported all the data from context
-var { score, setScore, seconds, minutes, hours } = useContext(GameStateContext);
+var {       score,
+            setScore,
+            seconds,
+            minutes,
+            hours,
+            time, setTime,
+            timerOn, setTimeOn, } = useContext(GameStateContext);
 
+
+  const reset = () =>{
+            seconds = 0
+            setTime(0)
+            minutes = 0
+            hours = 0
+            setScore(0)
+  }
   // I am multiplying the score with 10 to show the score
   let total = score * 10
   return (
@@ -19,7 +33,7 @@ var { score, setScore, seconds, minutes, hours } = useContext(GameStateContext);
         </Text>
         <Center>
         <Link to="/">
-         <Button  mt="10px" bgColor="khaki">
+         <Button onClick={reset} mt="10px" bgColor="khaki">
             Take test again
          </Button>
          </Link>
